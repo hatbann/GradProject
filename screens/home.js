@@ -24,7 +24,7 @@ export default function Home({ navigation }) {
     <View style={styles.container}>
       <ScrollView>
         <View style={styles.intro}>
-          <Text style={styles.text}>프로추리러, 선영님의 세계</Text>
+          <Text style={styles.titleText}>프로추리러, 선영님의 세계</Text>
           <Image
             source={require('../assets/img1.png')}
             style={styles.character}
@@ -32,11 +32,11 @@ export default function Home({ navigation }) {
           <Button title="My Plant" onPress={profilePressHandler}></Button>
         </View>
         <View>
-          <Text style={[styles.text, { marginTop: 80 }]}>
+          <Text style={[styles.titleText, { marginTop: 80 }]}>
             추리를 좋아하는{'\n'}선영님을 위한 추천도서
           </Text>
           <RecommandBooks />
-          <Text style={[styles.text, { marginTop: 80 }]}>오늘의 도서</Text>
+          <Text style={[styles.titleText, { marginTop: 80 }]}>오늘의 도서</Text>
           <TodayBooks />
         </View>
       </ScrollView>
@@ -69,4 +69,9 @@ const styles = StyleSheet.create({
     marginTop: 25,
   },
   text: { textAlign: 'center', fontSize: 16 },
+  titleText: {
+    fontSize: 20,
+    fontWeight: '600',
+    textAlign: 'center',
+  },
 });

@@ -9,10 +9,12 @@ import {
 } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
+//Components
+
 export default function Gathering() {
-  return (<View>
-    <Text style={{fontSize:38}}>모임</Text>
-  </View>);
+  return (
+    <View>
+      <ScrollView></ScrollView>
+    </View>
+  );
 }
-
-

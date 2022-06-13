@@ -13,13 +13,11 @@ import SwitchSelector from 'react-native-switch-selector';
 import MyInfo from './MyInfo';
 import FriendsList from './FriendsList';
 import BorrowBooks from './BorrowBooks';
-import Settings from './Settings';
 
 const options = [
   { label: '내 정보', value: '1' },
   { label: '친구목록', value: '2' },
   { label: '빌려준 책 목록', value: '3' },
-  { label: '설정', value: '4' },
 ];
 
 export default function MypageBarDetail() {
@@ -45,7 +43,6 @@ export default function MypageBarDetail() {
       {pagenum === '1' && <MyInfo></MyInfo>}
       {pagenum === '2' && <FriendsList></FriendsList>}
       {pagenum === '3' && <BorrowBooks></BorrowBooks>}
-      {pagenum === '4' && <Settings></Settings>}
     </View>
   );
 }

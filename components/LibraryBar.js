@@ -13,13 +13,11 @@ import SwitchSelector from 'react-native-switch-selector';
 import BookLists from '../components/BookLists';
 import BookReports from '../components/BookReports';
 import Calenders from '../components/Calendars';
-import FavoriteReports from '../components/FavoriteReport';
 
 const options = [
   { label: '책 목록', value: '1' },
   { label: '독서록', value: '2' },
   { label: '달력', value: '3' },
-  { label: '취향분석', value: '4' },
 ];
 
 export default function LibraryBarDetail() {
@@ -45,7 +43,6 @@ export default function LibraryBarDetail() {
       {pagenum === '1' && <BookLists></BookLists>}
       {pagenum === '2' && <BookReports></BookReports>}
       {pagenum === '3' && <Calenders></Calenders>}
-      {pagenum === '4' && <FavoriteReports></FavoriteReports>}
     </View>
   );
 }
@@ -62,6 +59,7 @@ const styles = StyleSheet.create({
   },
   button: {
     marginTop: 20,
+    marginBottom: 20,
   },
   underline: {
     borderWidth: 0.5,

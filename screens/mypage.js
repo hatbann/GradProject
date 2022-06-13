@@ -6,14 +6,16 @@ import {
   ScrollView,
   Button,
   Image,
+  Dimensions,
 } from 'react-native';
 
 //Components
 import MypageBarDetail from '../components/MypageBarDetail';
 
+const screenHeight = Dimensions.get('screen').height;
 export default function Profile() {
   return (
-    <View>
+    <View style={{ height: screenHeight }}>
       <ScrollView>
         <MypageBarDetail />
       </ScrollView>

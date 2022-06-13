@@ -34,7 +34,7 @@ export default function BookReports() {
         <View style={styles.list}>
           <Image
             source={{
-              uri: 'https://www.gwangjuin.com/news/photo/201707/95978_35912_3649.jpg',
+              uri: 'http://ojsfile.ohmynews.com/STD_IMG_FILE/2020/0418/IE002632888_STD.jpg',
             }}
             style={styles.bookImage}
           ></Image>
